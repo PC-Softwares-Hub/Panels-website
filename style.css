@@ -453,8 +453,30 @@ footer p {
     content: "🆓";
 }
 
-.subscribe-btn {
+.youtube-btn {
     background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.youtube-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
+}
+
+.unlock-btn {
+    background: linear-gradient(135deg, #4ecca3 0%, #3da886 100%);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -466,21 +488,9 @@ footer p {
     width: 100%;
 }
 
-.subscribe-btn:hover {
+.unlock-btn:hover:not(.locked) {
     transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
-}
-
-.unlock-btn.locked {
-    background: #666 !important;
-    cursor: not-allowed;
-    transform: none !important;
-    box-shadow: none !important;
-}
-
-.unlock-btn.locked:hover {
-    transform: none !important;
-    box-shadow: none !important;
+    box-shadow: 0 5px 20px rgba(78, 204, 163, 0.4);
 }
 
 .unlock-success {

@@ -119,10 +119,13 @@ function closeFreePanelsModal() {
 }
 
 function openYouTubeChannel() {
-    window.open('https://www.youtube.com/@FireHawkPanel', '_blank');
     isSubscribed = true;
     document.getElementById('unlockBtn').classList.remove('locked');
     document.getElementById('unlockBtn').disabled = false;
+}
+
+function handleYouTubeClick() {
+    setTimeout(openYouTubeChannel, 500);
 }
 
 function checkSubscription() {
@@ -130,9 +133,5 @@ function checkSubscription() {
         alert('Please subscribe to our YouTube channel first!');
         return;
     }
-    document.getElementById('freePanelsTitle').textContent = '✅ Panel Unlocked!';
-    document.getElementById('freePanelsDescription').textContent = 'Thank you for subscribing! Your free panel is ready to download.';
-    document.getElementById('youtubeLink').style.display = 'none';
-    document.getElementById('unlockBtn').style.display = 'none';
-    document.getElementById('unlockSuccess').style.display = 'block';
+    window.open('https://drive.google.com/file/d/1dZlIXxsBem4fINpQlYQitddbiiEB6HKH/view?usp=sharing', '_blank');
 }
