@@ -453,10 +453,21 @@ footer p {
     content: "🆓";
 }
 
-.youtube-subscribe {
-    margin: 20px 0;
+.youtube-info {
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    overflow: hidden;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.youtube-info p {
+    margin: 5px 0;
+    color: #a0a0a0;
+}
+
+.youtube-info p strong {
+    color: #fff;
 }
 
 .subscribe-btn {
