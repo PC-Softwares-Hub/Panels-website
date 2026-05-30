@@ -110,9 +110,10 @@
             <h2 id="freePanelsTitle">🔒 Free Panels Unlock</h2>
             <p id="freePanelsDescription">Subscribe to our YouTube channel to unlock the free panel download!</p>
             <div class="youtube-subscribe">
-                <iframe width="100%" height="100" src="https://www.youtube.com/embed/@FireHawkPanel?sub_confirmation=1" frameborder="0" allowfullscreen></iframe>
+                <iframe id="youtubeIframe" width="100%" height="100" src="https://www.youtube.com/embed/@FireHawkPanel?sub_confirmation=1" frameborder="0" allowfullscreen></iframe>
             </div>
-            <button class="subscribe-btn" onclick="checkSubscription()">I Subscribed - Unlock Now</button>
+            <button class="subscribe-btn" onclick="openYouTubeChannel()">Subscribe to YouTube</button>
+            <button id="unlockBtn" class="subscribe-btn locked" disabled onclick="checkSubscription()">Unlock Now</button>
             <div id="unlockSuccess" class="unlock-success" style="display: none;">
                 <p>🎉 Panel Unlocked!</p>
                 <a href="https://drive.google.com/file/d/1dZlIXxsBem4fINpQlYQitddbiiEB6HKH/view?usp=sharing" class="download-btn" target="_blank">Download Free Panel</a>
