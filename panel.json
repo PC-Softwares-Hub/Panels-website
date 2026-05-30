@@ -1,0 +1,61 @@
+{
+  "packages": {
+    "basic": {
+      "name": "Starter App Frontend",
+      "description": "Single-page frontend application layout using clean, optimized HTML, CSS, and interactive JS.",
+      "delivery_time": "3 Days",
+      "functional_website": true,
+      "number_of_pages": 1,
+      "revisions": "3",
+      "content_upload": true,
+      "plugins_extensions_installation": "",
+      "ecommerce_functionality": false,
+      "number_of_products": "",
+      "payment_integration": false,
+      "opt_in_form": false,
+      "autoresponder_integration": false,
+      "speed_optimization": false,
+      "hosting_setup": false,
+      "social_media_icons": true,
+      "price": 30
+    },
+    "standard": {
+      "name": "Dynamic Web Application",
+      "description": "Multi-page dynamic web app with advanced layout design, data filtering, and charts.",
+      "delivery_time": "5 Days",
+      "functional_website": true,
+      "number_of_pages": 3,
+      "revisions": "5",
+      "content_upload": true,
+      "plugins_extensions_installation": "2",
+      "ecommerce_functionality": false,
+      "number_of_products": "",
+      "payment_integration": false,
+      "opt_in_form": true,
+      "autoresponder_integration": false,
+      "speed_optimization": true,
+      "hosting_setup": true,
+      "social_media_icons": true,
+      "price": 75
+    },
+    "premium": {
+      "name": "Advanced Custom App",
+      "description": "Complex multi-page custom frontend web application with premium animations, dark mode UI, and interactive dashboard tools.",
+      "delivery_time": "7 Days",
+      "functional_website": true,
+      "number_of_pages": 5,
+      "revisions": "Unlimited",
+      "content_upload": true,
+      "plugins_extensions_installation": "5",
+      "ecommerce_functionality": false,
+      "number_of_products": "",
+      "payment_integration": false,
+      "opt_in_form": true,
+      "autoresponder_integration": false,
+      "speed_optimization": true,
+      "hosting_setup": true,
+      "social_media_icons": true,
+      "price": 150
+    }
+  }
+}
