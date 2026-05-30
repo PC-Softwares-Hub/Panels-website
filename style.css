@@ -425,3 +425,81 @@ footer p {
 .discord-float::before {
     content: "🔗";
 }
+
+.freepanels-float {
+    position: fixed;
+    bottom: 90px;
+    left: 20px;
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.freepanels-float:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 0, 0, 0.6);
+}
+
+.freepanels-float::before {
+    content: "🆓";
+}
+
+.youtube-subscribe {
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.subscribe-btn {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    width: 100%;
+}
+
+.subscribe-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
+}
+
+.unlock-success {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.unlock-success p {
+    color: #4ecca3;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #4ecca3 0%, #3da886 100%);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(78, 204, 163, 0.4);
+}

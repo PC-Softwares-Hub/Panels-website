@@ -100,5 +100,23 @@ document.addEventListener('click', function(e) {
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeModal();
+        closeFreePanelsModal();
     }
 });
+
+function openFreePanelsModal() {
+    document.getElementById('freePanelsModal').style.display = 'flex';
+    document.getElementById('unlockSuccess').style.display = 'none';
+}
+
+function closeFreePanelsModal() {
+    document.getElementById('freePanelsModal').style.display = 'none';
+}
+
+function checkSubscription() {
+    document.getElementById('freePanelsTitle').textContent = '✅ Panel Unlocked!';
+    document.getElementById('freePanelsDescription').textContent = 'Thank you for subscribing! Your free panel is ready to download.';
+    document.getElementById('youtube-subscribe').style.display = 'none';
+    document.querySelector('.subscribe-btn').style.display = 'none';
+    document.getElementById('unlockSuccess').style.display = 'block';
+}
