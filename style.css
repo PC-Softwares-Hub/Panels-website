@@ -453,23 +453,6 @@ footer p {
     content: "🆓";
 }
 
-.youtube-info {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    padding: 15px;
-    margin: 20px 0;
-    text-align: center;
-}
-
-.youtube-info p {
-    margin: 5px 0;
-    color: #a0a0a0;
-}
-
-.youtube-info p strong {
-    color: #fff;
-}
-
 .subscribe-btn {
     background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
     color: white;

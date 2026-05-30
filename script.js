@@ -132,7 +132,7 @@ function checkSubscription() {
     }
     document.getElementById('freePanelsTitle').textContent = '✅ Panel Unlocked!';
     document.getElementById('freePanelsDescription').textContent = 'Thank you for subscribing! Your free panel is ready to download.';
-    document.getElementById('youtubeIframe').style.display = 'none';
-    document.querySelector('.subscribe-btn').style.display = 'none';
+    document.getElementById('youtubeLink').style.display = 'none';
+    document.getElementById('unlockBtn').style.display = 'none';
     document.getElementById('unlockSuccess').style.display = 'block';
 }
