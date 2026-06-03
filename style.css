@@ -552,11 +552,29 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 10px;
+        left: 12px;
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+    .discord-float {
+        bottom: 60px;
+        left: 12px;
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
     .setup-float {
         bottom: 110px;
         left: 12px;
         padding: 10px 14px;
         font-size: 0.85rem;
         max-width: calc(100vw - 24px);
+    }
+    .freepanels-float {
+        bottom: 160px;
+        left: 12px;
+        padding: 10px 14px;
+        font-size: 0.85rem;
     }
 }
