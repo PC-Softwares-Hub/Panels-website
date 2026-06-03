@@ -92,8 +92,9 @@ function redirectToWhatsapp() {
 }
 
 document.addEventListener('click', function(e) {
-    if (e.target === modal) {
+    if (e.target === modal || e.target === document.getElementById('setupModal')) {
         closeModal();
+        closeSetupModal();
     }
 });
 
@@ -101,6 +102,7 @@ document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
         closeModal();
         closeFreePanelsModal();
+        closeSetupModal();
     }
 });
 
@@ -137,5 +139,9 @@ function checkSubscription() {
 }
 
 function openSetupModal() {
-    alert('Setup instructions will be provided via Discord or WhatsApp!\n\nClick the Discord or Contact Us button for setup help.');
+    document.getElementById('setupModal').style.display = 'flex';
+}
+
+function closeSetupModal() {
+    document.getElementById('setupModal').style.display = 'none';
 }

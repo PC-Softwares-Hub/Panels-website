@@ -180,6 +180,31 @@ header p {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+#setupContent h3 {
+    color: #e94560;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#setupContent h3:first-child {
+    margin-top: 0;
+}
+
+#setupContent p {
+    color: #a0a0a0;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+#setupContent a {
+    color: #4ecca3;
+    text-decoration: none;
+}
+
+#setupContent a:hover {
+    text-decoration: underline;
+}
+
 .close {
     position: absolute;
     top: 15px;
