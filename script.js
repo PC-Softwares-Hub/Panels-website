@@ -135,3 +135,7 @@ function checkSubscription() {
     }
     window.open('https://drive.google.com/file/d/1dZlIXxsBem4fINpQlYQitddbiiEB6HKH/view?usp=sharing', '_blank');
 }
+
+function openSetupModal() {
+    alert('Setup instructions will be provided via Discord or WhatsApp!\n\nClick the Discord or Contact Us button for setup help.');
+}
