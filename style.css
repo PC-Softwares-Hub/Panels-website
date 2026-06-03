@@ -401,7 +401,7 @@ footer p {
 
 .discord-float {
     position: fixed;
-    bottom: 80px;
+    bottom: 70px;
     left: 20px;
     background: linear-gradient(135deg, #7289da 0%, #5a6fa1 100%);
     color: white;
@@ -419,7 +419,7 @@ footer p {
 
 .setup-float {
     position: fixed;
-    bottom: 140px;
+    bottom: 120px;
     left: 20px;
     background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
     color: white;
