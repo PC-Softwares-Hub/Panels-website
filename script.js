@@ -5,42 +5,15 @@ const modalStatus = document.getElementById('modalStatus');
 const modalPrice = document.getElementById('modalPrice');
 const durationInput = document.getElementById('duration');
 
-const products = {
-    'Aimbot🎯': {
-        description: 'SimpleAimbot With On/Off + Panel Hide',
-        status: 'All-Server-Safe✔️',
-        basePrice: 1.79
-    },
-    'FemaleFixAimbot🎯': {
-        description: 'Rage Aimbot + Panel Hide',
-        status: 'Ind-Server-Safe✔️',
-        basePrice: 1.79
-    },
-    'SniperAimbot🎯': {
-        description: 'Aimbot+Fast Switch+ Panel Hide',
-        status: 'All-Server-Safe✔️',
-        basePrice: 1.79
-    },
-    'Brutal👑': {
-        description: 'Fast Speed+Fast Fire+Emulator Bypass',
-        status: 'Blacklist-Issue-in-pk/Ind-Server-Safe✔️',
-        basePrice: 1.79
-    },
-    'Location👁️': {
-        description: '3D-Location of enemies',
-        status: 'All-Server-Safe✔️',
-        basePrice: 0.90
-    }
-};
-
 let currentProduct = '';
+let currentBasePrice = 1.79;
 
-function openBuyModal(productName) {
+function openBuyModal(productName, description, basePrice) {
     currentProduct = productName;
-    const product = products[productName];
+    currentBasePrice = parseFloat(basePrice);
     modalTitle.textContent = productName;
-    modalDescription.textContent = product.description;
-    modalStatus.textContent = product.status;
+    modalDescription.innerHTML = description.replace(/\n/g, '<br>');
+    modalStatus.textContent = '';
     durationInput.value = 15;
     updatePrice();
     modal.style.display = 'flex';
@@ -51,9 +24,8 @@ function closeModal() {
 }
 
 function updatePrice() {
-    const product = products[currentProduct];
     const days = parseInt(durationInput.value);
-    const price = (product.basePrice * days / 15).toFixed(2);
+    const price = (currentBasePrice * days / 15).toFixed(2);
     modalPrice.textContent = `$${price}`;
 }
 
@@ -74,18 +46,16 @@ function incrementDuration() {
 }
 
 function redirectToDiscord() {
-    const product = products[currentProduct];
     const days = parseInt(durationInput.value);
-    const price = (product.basePrice * days / 15).toFixed(2);
+    const price = (currentBasePrice * days / 15).toFixed(2);
     alert(`Order: ${currentProduct}\nDuration: ${days} days\nPrice: $${price}\n\nRedirecting to Discord...`);
     window.open('https://discord.gg/CstwWEXeZF', '_blank');
     closeModal();
 }
 
 function redirectToWhatsapp() {
-    const product = products[currentProduct];
     const days = parseInt(durationInput.value);
-    const price = (product.basePrice * days / 15).toFixed(2);
+    const price = (currentBasePrice * days / 15).toFixed(2);
     const message = `${currentProduct} ${days} days price $${price}`;
     window.open(`https://wa.me/923278647470?text=${encodeURIComponent(message)}`, '_blank');
     closeModal();
