@@ -125,7 +125,8 @@ function checkSubscription() {
         alert('Please subscribe to our YouTube channel first!');
         return;
     }
-    window.open('https://drive.google.com/file/d/1D_J7X2dmjrx_6wHnTwAQMpLIVln6kC1K/view?usp=sharing', '_blank');
+    document.getElementById('unlockSuccess').style.display = 'block';
+    document.getElementById('unlockBtn').disabled = true;
 }
 
 function openSetupModal() {
