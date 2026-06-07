@@ -119,9 +119,18 @@ header p {
 
 .product-card h3 {
     font-size: 1.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     color: #fff;
     text-shadow: 0 0 10px rgba(233, 69, 96, 0.5);
+}
+
+.product-subtitle {
+    font-size: 0.95rem;
+    color: #4ecca3;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .product-card .price {
@@ -391,74 +400,6 @@ footer p {
     }
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    background: linear-gradient(135deg, #25d366 0%, #1da854 100%);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    line-height: 1.3;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
-}
-
-.whatsapp-float::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M20.52 3.48A11.67 11.67 0 0 0 2.82 12.5a11.67 11.67 0 0 0 4.16 7.13L.82 21.52l1.88-5.63a11.67 11.67 0 0 0 17.8-8.41zM12 20.2a8.18 8.18 0 0 1-4.09-1.11l-.29-.17-1.34 4 1.34-.44 1.62-.54a8.18 8.18 0 0 1-2.08-4.56h.05a8.18 8.18 0 0 1 7.7-6.21A8.18 8.18 0 0 1 12 20.2z'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.discord-float {
-    position: fixed;
-    bottom: 70px;
-    left: 20px;
-    background: linear-gradient(135deg, #7289da 0%, #5a6fa1 100%);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.95rem;
-    box-shadow: 0 5px 20px rgba(114, 137, 218, 0.4);
-    z-index: 1000;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    white-space: nowrap;
-    border: 2px solid rgba(255, 255, 255, 0.25);
-    line-height: 1.3;
-}
-
-.discord-float:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(114, 137, 218, 0.6);
-}
-
-.discord-float::before {
-    content: "🔗";
-}
-
 .setup-float {
     position: fixed;
     bottom: 120px;
@@ -519,6 +460,94 @@ footer p {
 
 .freepanels-float::before {
     content: "🆓";
+}
+
+.contact-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #25d366 0%, #1da854 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    line-height: 1.3;
+}
+
+.contact-float:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(37, 211, 102, 0.6);
+}
+
+.contact-float::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M20.52 3.48A11.67 11.67 0 0 0 2.82 12.5a11.67 11.67 0 0 0 4.16 7.13L.82 21.52l1.88-5.63a11.67 11.67 0 0 0 17.8-8.41zM12 20.2a8.18 8.18 0 0 1-4.09-1.11l-.29-.17-1.34 4 1.34-.44 1.62-.54a8.18 8.18 0 0 1-2.08-4.56h.05a8.18 8.18 0 0 1 7.7-6.21A8.18 8.18 0 0 1 12 20.2z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.livewallpaper-float {
+    position: fixed;
+    bottom: 70px;
+    left: 20px;
+    background: linear-gradient(135deg, #8e44ad 0%, #732d91 100%);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    box-shadow: 0 5px 20px rgba(142, 68, 173, 0.4);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    line-height: 1.3;
+}
+
+.livewallpaper-float:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(142, 68, 173, 0.6);
+}
+
+.livewallpaper-float::before {
+    content: "🎨";
+}
+
+.contact-btn.livewallpaper-pc {
+    background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+    color: white;
+}
+
+.contact-btn.livewallpaper-pc:hover {
+    background: linear-gradient(135deg, #2980b9 0%, #3498db 100%);
+    transform: scale(1.05);
+}
+
+.contact-btn.livewallpaper-android {
+    background: linear-gradient(135deg, #27ae60 0%, #1e8449 100%);
+    color: white;
+}
+
+.contact-btn.livewallpaper-android:hover {
+    background: linear-gradient(135deg, #1e8449 0%, #27ae60 100%);
+    transform: scale(1.05);
 }
 
 .youtube-btn {
@@ -588,14 +617,30 @@ footer p {
     box-shadow: 0 5px 20px rgba(78, 204, 163, 0.4);
 }
 
+.internal-apk-btn {
+    background: linear-gradient(135deg, #ff8c00 0%, #e67600 100%);
+    margin-top: 10px;
+}
+
+.internal-apk-btn:hover {
+    box-shadow: 0 5px 20px rgba(255, 140, 0, 0.4);
+}
+
+.internal-apk-note {
+    color: #ffcc00;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
-    .whatsapp-float {
+    .contact-float {
         bottom: 10px;
         left: 12px;
         padding: 10px 14px;
         font-size: 0.85rem;
     }
-    .discord-float {
+    .livewallpaper-float {
         bottom: 60px;
         left: 12px;
         padding: 10px 14px;

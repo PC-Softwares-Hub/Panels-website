@@ -61,10 +61,28 @@ function redirectToWhatsapp() {
     closeModal();
 }
 
+function openContactModal() {
+    document.getElementById('contactModal').style.display = 'flex';
+}
+
+function closeContactModal() {
+    document.getElementById('contactModal').style.display = 'none';
+}
+
+function openLivewallpaperModal() {
+    document.getElementById('livewallpaperModal').style.display = 'flex';
+}
+
+function closeLivewallpaperModal() {
+    document.getElementById('livewallpaperModal').style.display = 'none';
+}
+
 document.addEventListener('click', function(e) {
-    if (e.target === modal || e.target === document.getElementById('setupModal')) {
+    if (e.target === modal || e.target === document.getElementById('setupModal') || e.target === document.getElementById('contactModal') || e.target === document.getElementById('livewallpaperModal')) {
         closeModal();
         closeSetupModal();
+        closeContactModal();
+        closeLivewallpaperModal();
     }
 });
 
@@ -73,6 +91,8 @@ document.addEventListener('keydown', function(e) {
         closeModal();
         closeFreePanelsModal();
         closeSetupModal();
+        closeContactModal();
+        closeLivewallpaperModal();
     }
 });
 
@@ -105,7 +125,7 @@ function checkSubscription() {
         alert('Please subscribe to our YouTube channel first!');
         return;
     }
-    window.open('https://drive.google.com/file/d/1dZlIXxsBem4fINpQlYQitddbiiEB6HKH/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1D_J7X2dmjrx_6wHnTwAQMpLIVln6kC1K/view?usp=sharing', '_blank');
 }
 
 function openSetupModal() {
