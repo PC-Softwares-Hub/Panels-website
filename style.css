@@ -617,6 +617,43 @@ footer p {
     box-shadow: 0 5px 20px rgba(78, 204, 163, 0.4);
 }
 
+.expired-btn-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.expired-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #e94560;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 8px rgba(233, 69, 96, 0.5);
+    z-index: 1;
+    transform: rotate(15deg);
+    pointer-events: none;
+}
+
+.apk-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.apk-row .internal-apk-btn {
+    margin-top: 0;
+    flex: 1;
+    min-width: 140px;
+}
+
 .internal-apk-btn {
     background: linear-gradient(135deg, #ff8c00 0%, #e67600 100%);
     margin-top: 10px;

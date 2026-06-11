@@ -168,11 +168,23 @@
             <button id="unlockBtn" class="unlock-btn locked" disabled onclick="checkSubscription()">Unlock Now</button>
             <div id="unlockSuccess" class="unlock-success" style="display: none;">
                 <p>🎉 Panel Unlocked!</p>
-                <a href="https://drive.google.com/drive/folders/1EebmRoxPVXLrwJyoY229M0vwU-vlnZ0y?usp=sharing" class="download-btn" target="_blank">Internal 1</a>
-                <a href="https://drive.google.com/drive/folders/1U9-_H6h7u8KGftu7gbIbKYoStfgeV-QC?usp=sharing" class="download-btn" target="_blank" style="margin-top: 10px;">Internal 2</a>
+                <div class="expired-btn-wrapper">
+                    <a href="https://drive.google.com/drive/folders/1EebmRoxPVXLrwJyoY229M0vwU-vlnZ0y?usp=sharing" class="download-btn" target="_blank">Internal 1</a>
+                    <span class="expired-badge">Expired</span>
+                </div>
+                <div class="expired-btn-wrapper" style="margin-top: 10px;">
+                    <a href="https://drive.google.com/drive/folders/1U9-_H6h7u8KGftu7gbIbKYoStfgeV-QC?usp=sharing" class="download-btn" target="_blank">Internal 2</a>
+                    <span class="expired-badge">Expired</span>
+                </div>
+                <div class="expired-btn-wrapper" style="margin-top: 10px;">
+                    <a href="https://drive.google.com/drive/folders/1aws5cqy_liGOyKmxA4Mx58oKNYl-NXU7?usp=sharing" class="download-btn" target="_blank">External Beta FF</a>
+                    <span class="expired-badge" style="background: #4ecca3;">Live</span>
+                </div>
             </div>
-            <a href="https://www.mediafire.com/file/3m2x8a334zgoakg/Momen_OB53.xapk/file" class="download-btn internal-apk-btn" target="_blank" style="margin-top: 15px;">Internal APK</a>
-            <p class="internal-apk-note">⚠️ Internal will work on this APK</p>
+            <div class="apk-row">
+                <a href="https://www.mediafire.com/file/3m2x8a334zgoakg/Momen_OB53.xapk/file" class="download-btn internal-apk-btn" target="_blank">Internal APK</a>
+                <a href="https://www.mediafire.com/file/gvxlhhyyst0d47r/Free+Fire_+Max_x86.xapk/file" class="download-btn internal-apk-btn" target="_blank">FF Beta Apk</a>
+            </div>
         </div>
     </div>
 
